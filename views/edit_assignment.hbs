@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit_Assignment</title>
+
+</head>
+
+<body>
+    
+    {{> inheader}}
+
+    <div class="form-area col-lg-12">
+
+        <form  class="inside-form col-lg-6" action="/assignment/update" method="post" >
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" value="{{data.Title}}" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="textarea" class="form-control" id="description" name="description" value="{{data.Description}}">
+            </div>
+        
+            <div class="form-group">
+                <label for="score">Score</label>
+                <input type="number" class="form-control" id="score" name="score" minlength="1" maxlength="3" value="{{data.Score}}" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="duedate">Due date</label>
+                <input type="date" class="form-control" id="duedate" name="duedate" value="{{data.Date}}" required>
+            </div>
+        
+            <div class="sub-button">
+                <button style ="display : flex,justify-content:center, margin-right:10px;" type="submit" class="btn btn-primary">Update</button>
+            </div>
+
+            {{#if message}}
+                <span style="" class="alert alert-danger">{{message}}</span>
+            {{/if}}
+
+            {{#if register}}
+                <span style="color : blue">{{register}}</span>
+            {{/if}}                
+        
+        </form>
+        
+    </div>
+    
+    {{> footer}}
+
+</body>
+
+</html>

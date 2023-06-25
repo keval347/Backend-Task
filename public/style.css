@@ -1,0 +1,102 @@
+/* header style */
+.header {
+    height: 60px;
+    display: flex;
+    background-color: white;
+}
+.header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header ul li{  
+    margin-top: 7px ;  
+    list-style: none;
+    text-decoration: none;
+}
+
+.header ul li a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/* body style */
+.form-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.inside-form div{
+    margin-bottom: 12px;
+}
+
+.inside-form {
+    border: 2px solid black;
+    border-radius: 34px;
+    padding: 32px
+}
+.role {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+}
+.sub-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.sub-button button{
+    background-color: black;
+}
+.sub-button button:hover{
+    background-color: white;
+    color: black;
+    border: 0px solid white;
+}
+.sub-button button:onclick{
+    background-color: white;
+    color: black;
+    border: 0px solid white;
+}
+table{
+    overflow: scroll;
+}
+table tr td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+table tr th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.profiletable tr td{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* footer style */
+.footer {
+    background-color: black;
+    position:fixed;
+    color: white;
+	bottom:0;
+    font-size: small;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer span{
+    margin-left: 15px;
+}

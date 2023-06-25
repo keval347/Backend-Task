@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    {{>inheader}}
+    <div class="form-area col-lg-12" >
+
+        <div class="inside-form col-lg-6" style="">
+            <h4 class="col-lg-12" style="text-align: center;">{{username}}</h4>
+            <div style="height: 300px;">
+                <table class="profiletable" style="margin-top:20px; margin-left:50px">
+                    <tr>
+                        <td>Role</td>
+                        <td>{{userdata.role}}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>{{userdata.email}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+</html>
