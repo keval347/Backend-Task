@@ -10,38 +10,7 @@ facilities to edit delete assignment is only given to teachers
 ## Authors
 
 - Keval Luvani
-
-
-## Acknowledgements
-
-    I created a Front-end part also in this application  so user can easily enter data
-
-    3 user are already there for this app 
-    you can login with that or there is registration also available
-
-    Teacher
-    
-    name :  keval luvani    
-    email : kluvani22@gmail.com
-    password : keval@123
-    role :  teacher
-    
-    Students
-
-    name : kremil goti
-    email : kremilgoti@gmail.com    
-    password : kremil@123
-    role : student 
-
-    name : keval scet
-    email : 190420107529.co19s2@scet.ac.in
-    password : keval@123
-    role : student 
-
-
-    
-
-
+  
 ## Run Locally
 
 i pushed my docker image on dockerhub
@@ -64,7 +33,6 @@ after container run sucessfully go to browser on url
   localhost:3000
 ```
 ## API Reference
-
 
 #### login page
 
