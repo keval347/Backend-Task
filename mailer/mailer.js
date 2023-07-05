@@ -6,8 +6,8 @@ const sendmail = (to,sub,text)=>{
         
       service : 'gmail',
       auth: {
-          user: 'kluvani222@gmail.com',
-          pass: 'dbizogqsifqzwkvp'
+          user:  Email
+          pass:  YourAppPassWord
       }
 
     });
